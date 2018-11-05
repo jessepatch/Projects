@@ -1,11 +1,15 @@
 package basics;
 
+import java.util.scanner;
+
 public class ChangeCalculator {
 
 	public static void main(String[] args) {
 
-		int change = 67;
-		returnChange(change);
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the change (1-99): ");
+		
+		returnChange(input.nextInt());
 	}
 
 	public static void returnChange(int change) {
